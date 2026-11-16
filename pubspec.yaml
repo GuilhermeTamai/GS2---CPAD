@@ -1,0 +1,23 @@
+name: territory_insights
+description: Painel de inteligência territorial - FIAP Global Solution 2026.2
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.9.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.2            # gerenciamento de estado global
+  http: ^1.2.2                # consumo da API Open-Meteo
+  shared_preferences: ^2.3.2  # persistência local (cache, ocorrências, limiares)
+  fl_chart: ^1.0.0            # gráficos de linha
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
