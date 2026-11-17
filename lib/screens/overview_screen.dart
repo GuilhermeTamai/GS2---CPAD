@@ -67,7 +67,7 @@ class _Body extends StatelessWidget {
               semanticLabel:
                   'Benefício social estimado: ${fmtInt(s.householdsCovered)} de '
                   '${fmtInt(AppState.totalHouseholds)} domicílios com aviso antecipado. '
-                  '${s.occurrences.length} ocorrências cidadãs registradas.',
+                  '${s.occurrences.length} ${s.occurrences.length == 1 ? 'ocorrência cidadã registrada' : 'ocorrências cidadãs registradas'}.',
               child: Row(children: [
                 Icon(Icons.favorite, color: Theme.of(context).colorScheme.primary),
                 const SizedBox(width: Sp.m),
@@ -77,7 +77,7 @@ class _Body extends StatelessWidget {
                     Text(
                         '${fmtInt(s.householdsCovered)} de ${fmtInt(AppState.totalHouseholds)} '
                         'domicílios com aviso antecipado ($pct%)'),
-                    Text('${s.occurrences.length} ocorrências cidadãs registradas',
+                    Text('${s.occurrences.length} ${s.occurrences.length == 1 ? 'ocorrência cidadã registrada' : 'ocorrências cidadãs registradas'}',
                         style: t.bodySmall),
                   ]),
                 ),
