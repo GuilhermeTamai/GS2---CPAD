@@ -47,7 +47,7 @@ Chuvas fortes, calor extremo e consumo anômalo de água e energia costumam ser 
  
 | Fonte ampliada |
 |---|
-| ![Visão geral com fonte ampliada](assets/screenshots/10_fonte_grande.png) |
+| <img src="assets/screenshots/10_fonte_grande.png" alt="Visão geral com fonte ampliada" width="270"> |
  
 ## Funcionalidades
  
@@ -119,6 +119,3 @@ https://www.youtube.com/shorts/_4s8jGDnRp8
 ## Licença
  
 Projeto acadêmico — FIAP, Global Solution 2026.2.
-🌤️ Free Open-Source Weather API | Open-Meteo.com
-Open-Source ☀️ Weather API with free access for non-commercial use. No API Key required ✅. Accurate weather forecasts for any location. Open-Meteo provides high-resolution open data ranging from 1 ...
- 
