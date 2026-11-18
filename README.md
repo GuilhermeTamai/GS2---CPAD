@@ -1,9 +1,3 @@
-# GS2---CPAD
-
-# Problema e público
-
-O Território Preditivo é um app mobile que antecipa chuva forte, calor extremo e anomalias de consumo de água e energia no território. Hoje esses eventos costumam ser percebidos pela gestão pública só depois do dano: alagamentos sem aviso, vazamentos que duram dias e picos de demanda que sobrecarregam a rede. O público são os gestores públicos (Defesa Civil e secretarias de meio ambiente, saneamento e energia), que acompanham os indicadores e decidem o que fazer, e os cidadãos, que registram ocorrências de forma anônima. O benefício social esperado é avisar domicílios antes de alagamentos, abrir pontos de hidratação em dias de calor extremo e detectar vazamentos cedo; o app mostra isso no indicador "domicílios com aviso antecipado".
-
 # Território Preditivo
  
 ![Banner do Território Preditivo](assets/screenshots/banner.png)
@@ -65,7 +59,7 @@ Chuvas fortes, calor extremo e consumo anômalo de água e energia costumam ser 
  
 ## Dados e alertas
  
-- **Fontes:** clima real via [Open-Meteo](🌤️ Free Open-Source Weather API | Open-Meteo.com) (API pública, sem chave); água e energia são **sintéticos** (API municipal simulada, determinísticos).
+- **Fontes:** clima real via [Open-Meteo](https://open-meteo.com/) (API pública, sem chave); água e energia são **sintéticos** (API municipal simulada, determinísticos).
 - **Como os alertas são gerados:**
   - *Chuva e temperatura:* a previsão dos próximos 7 dias passa do limiar configurado. A confiança cai 8 p.p. por dia de horizonte (90% no dia 1, mínimo de 40%).
   - *Água:* z-score da média dos últimos 3 dias contra a linha de base dos dias anteriores. Confiança = 0,5 + 0,08 · z (entre 50% e 90%).
@@ -99,10 +93,10 @@ Chuvas fortes, calor extremo e consumo anômalo de água e energia costumam ser 
  
 ## Como executar
  
-Pré-requisito: [Flutter](Install and set up Flutter) estável (3.35 ou superior) e um emulador Android ou dispositivo conectado.
+Pré-requisito: [Flutter](https://docs.flutter.dev/get-started/install) estável (3.35 ou superior) e um emulador Android ou dispositivo conectado.
  
 ```bash
-git clone GitHub - GuilhermeTamai/GS2---CPAD
+git clone https://github.com/GuilhermeTamai/GS2---CPAD.git
 cd GS2---CPAD
 flutter pub get
 flutter run
